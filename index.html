@@ -5,21 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css">
-   <script src="./gallery.js" defer></script>
+   <script src="./js/gallery.js" defer></script>
   <style>
     .gallery {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0;
+  padding-left: 156px;
+  padding-top: 24px;
+  padding-right: 156px;
+  padding-bottom: 24px;
   margin: 0;
   gap: 16px;
+  width: 1440px;
+  height: 696px;
 }
 
 .gallery-item {
   position: relative;
   flex: 1 1 calc(33.333% - 16px);
-  max-width: calc(33.333% - 16px);
+  width: 360 px;
+  height: 200 px;
   overflow: hidden;
 }
 
@@ -36,9 +42,9 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.gallery-item:hover .gallery-image {
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+.gallery-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
 }
   </style>
 </head>
